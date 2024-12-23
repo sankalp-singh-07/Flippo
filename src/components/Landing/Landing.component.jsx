@@ -4,7 +4,11 @@ import { FaArrowUp } from 'react-icons/fa';
 
 const Landing = () => {
 	return (
-		<div className="w-full h-screen bg-zinc-900 pt-1">
+		<div
+			data-scroll
+			data-scroll-speed="-.4"
+			className="w-full h-screen bg-zinc-900 pt-1"
+		>
 			<div className="textBox mt-48 ml-20">
 				{['We create', 'Eye-opening', 'presentations'].map(
 					(item, ind) => {
