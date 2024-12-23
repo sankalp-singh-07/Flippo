@@ -6,6 +6,7 @@ import About from './components/About/About.component';
 import Eyes from './components/Eyes/eyes.component';
 import Featured from './components/Featured/Featured.component';
 import Cards from './components/Cards/Cards.component';
+import Footer from './components/Footer/Footer.component';
 
 const App = () => {
 	return (
@@ -17,6 +18,7 @@ const App = () => {
 			<Eyes />
 			<Featured />
 			<Cards />
+			<Footer />
 		</div>
 	);
 };
