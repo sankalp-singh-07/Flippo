@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import React from 'react';
 import { FaArrowUp } from 'react-icons/fa';
 
@@ -11,9 +12,28 @@ const Landing = () => {
 							<div key={ind} className="masker">
 								<div className="w-fit flex items-center">
 									{ind === 1 && (
-										<div className="h-[4.7vw] w-[9vw] bg-red-600 relative top-[2.2px] rounded-md mr-[1vw]"></div>
+										<motion.div
+											initial={{ width: 0 }}
+											animate={{ width: '9vw' }}
+											transition={{
+												ease: [0.76, 0, 0.24, 1],
+												duration: 1,
+											}}
+											className="h-[4.7vw] w-[9vw] relative top-[2.2px] rounded-md mr-[1vw]"
+										>
+											<img
+												className="w-full h-full object-cover rounded-md"
+												src="https://www.wallpaperflare.com/static/615/952/64/landscape-photoshop-mountains-green-wallpaper.jpg"
+											/>
+										</motion.div>
 									)}
-									<h1 className="uppercase text-[6.4vw] leading-[6vw] tracking-tight font-manrope font-bold">
+									<h1
+										className={`uppercase text-[6.4vw] leading-[6vw] tracking-tight font-manrope font-bold ${
+											ind === 1
+												? 'text-[#356552]'
+												: 'text-slate-50'
+										}`}
+									>
 										{item}
 									</h1>
 								</div>
