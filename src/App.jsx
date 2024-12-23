@@ -4,6 +4,7 @@ import Landing from './components/Landing/Landing.component';
 import Marquee from './components/Marquee/Marquee.component';
 import About from './components/About/About.component';
 import Eyes from './components/Eyes/eyes.component';
+import Featured from './components/Featured/Featured.component';
 
 const App = () => {
 	return (
@@ -13,6 +14,7 @@ const App = () => {
 			<Marquee />
 			<About />
 			<Eyes />
+			<Featured />
 		</div>
 	);
 };
